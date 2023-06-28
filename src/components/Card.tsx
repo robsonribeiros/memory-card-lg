@@ -26,8 +26,8 @@ export default function Card({ card, handleChoice, flipped, disabled }: CardProp
   return (
     <div className="card">
       <div className={flipped ? 'flipped': "" }>
-        <Image className="w-[180px] h-[280px] front" src={card.src} width={100} height={100} alt="front-face" />
-        <Image className="w-[180px] h-[280px] back" src="/back.png" width={100} height={100} alt="back-face" onClick={handleClick} />
+        <Image className="max-w-[180px] max-h-[280px] front" src={card.src} width={140} height={100} alt="front-face" />
+        <Image className="max-w-[180px] max-h-[280px] back" src="/back.png" width={140} height={100} alt="back-face" onClick={handleClick} />
       </div>
     </div>
   );

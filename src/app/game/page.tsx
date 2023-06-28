@@ -122,13 +122,13 @@ export default function Game() {
   }, []);
 
   return (
-    <main className="w-full h-screen bg-white relative flex flex-col items-center justify-start p-10">
-      <h1 className="text-4xl font-game uppercase text-lg-red mb-5">jogo da memória</h1>
+    <main className="w-full h-screen bg-white relative flex flex-col items-center justify-start p-6">
+      <h1 className="text-3xl font-game uppercase text-lg-red mb-5">jogo da memória</h1>
       <div className="mb-5 flex items-center justify-center gap-10">
-        <button onClick={shuffleCards} className="uppercase text-lg-red border-2 border-lg-red hover:bg-lg-red hover:text-white shrink-0 py-4 px-10 transition-all">Resetar</button>
+        <button onClick={shuffleCards} className="uppercase text-lg-red border-2 border-lg-red hover:bg-lg-red hover:text-white shrink-0 py-2 px-8 transition-all">Resetar</button>
         <h2 className="w-full max-w-4xl text-right mt-2">Jogadas: <span className="text-2xl">{ turns }</span></h2>
       </div>
-      <section className="grid gap-5 grid-cols-4">
+      <section className="grid gap-3 grid-cols-4 h-auto">
         {cards.map(card => (
           <Card
             key={card.id}
