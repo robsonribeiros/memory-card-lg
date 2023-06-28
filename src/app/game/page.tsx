@@ -128,7 +128,7 @@ export default function Game() {
         <button onClick={shuffleCards} className="uppercase text-lg-red border-2 border-lg-red hover:bg-lg-red hover:text-white shrink-0 py-4 px-10 transition-all">Resetar</button>
         <h2 className="w-full max-w-4xl text-right mt-2">Jogadas: <span className="text-2xl">{ turns }</span></h2>
       </div>
-      <section className="grid gap-10 grid-cols-4">
+      <section className="grid gap-5 grid-cols-4">
         {cards.map(card => (
           <Card
             key={card.id}
